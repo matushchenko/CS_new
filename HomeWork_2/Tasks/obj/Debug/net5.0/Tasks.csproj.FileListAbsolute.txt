@@ -1,0 +1,15 @@
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\Tasks.exe
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\Tasks.deps.json
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\Tasks.runtimeconfig.json
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\Tasks.runtimeconfig.dev.json
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\Tasks.dll
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\ref\Tasks.dll
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\bin\Debug\net5.0\Tasks.pdb
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.AssemblyInfoInputs.cache
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.AssemblyInfo.cs
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.csproj.CoreCompileInputs.cache
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.dll
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\ref\Tasks.dll
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.pdb
+C:\Users\matus\OneDrive\Рабочий стол\Курс Unity\Основы языка C#\HomeWork_2\Tasks\obj\Debug\net5.0\Tasks.genruntimeconfig.cache
