@@ -6,6 +6,15 @@ namespace Task1
     class Program
     {
 
+        static int Min_num(int a, int b, int c)
+        {
+            if (a < b && a < c) return a ;
+            else
+            {
+                if (b < c && b < a) return b;
+                else return c;
+            }
+        }
         static void Task_1()
         {
             Console.WriteLine("Задача 1: Написать метод, возвращающий минимальное из трёх чисел.");
@@ -15,13 +24,9 @@ namespace Task1
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите третье число:");
             int c = int.Parse(Console.ReadLine());
-
-            if (a < b && a < c) Console.WriteLine("Минимальное из чисел:" + a);
-            else
-            {
-                if (b < c && b < a) Console.WriteLine("Минимальное из чисел:" + b);
-                else { Console.WriteLine("Минимальное из чисел:" + c); }
-            }
+            Console.WriteLine("Минимальное из чисел:");
+            
+            Console.WriteLine(Min_num(a,b,c));
             Console.WriteLine("");
         }
         static void Task_2()
@@ -170,23 +175,98 @@ namespace Task1
             Console.WriteLine("");
         }
 
+
+        // Задача 6
+
+        static void Task_gd_num(int min, int max)
+        {
+            int count_num = 0;
+            while (min <= max)
+            {
+                int n2 = min, sum = 0;
+
+                while (n2 > 0)
+                {
+                    sum = sum + n2 % 10;
+                    n2 = n2 / 10;
+                }
+                if (min % sum == 0)
+                { count_num = count_num + 1; }
+                else { count_num = count_num; }
+                min++;
+
+            }
+            Console.WriteLine("Сумма «хороших» чисел " + count_num);
+        }
         static void Task_6()
         {
             Console.WriteLine("Задача 6: Написать программу подсчета количества «хороших» чисел в диапазоне от 1 до 1 000 000 000. \n" +
-                "«Хорошим» называется число, которое делится на сумму своих цифр. \n " +
-                "Реализовать подсчёт времени выполнения программы, используя структуру DateTime.");
+                "«Хорошим» называется число, которое делится на сумму своих цифр. \n" +
+                "Реализовать подсчёт времени выполнения программы, используя структуру DateTime.\n");
+            int min = 1;
+            int max = 1000000000;
+            int maxln = max.ToString().Length;
+            Console.WriteLine("Начинаем подсчет, подождите.");
+            var Date1 = DateTime.Now;
+            Task_gd_num(min, max);
+            var Date2 = DateTime.Now - Date1;
+            Console.WriteLine("Время выполнения: " + Date2);
 
             Console.WriteLine("");
         }
+
+
+        // Задача 7
+
         static void Task_7()
         {
             Console.WriteLine("Задача 7: \n" +
                 "a) Разработать рекурсивный метод, который выводит на экран числа от a до b(a<b). \n" +
                 "б) Разработать рекурсивный метод, который считает сумму чисел от a до b.");
+            Console.WriteLine("Укажите часть a или b желаете проверить:");
+            string x = Console.ReadLine();
+
+            if (x == "a") Task_7a();
+            else
+            {
+                if (x == "b") Task_7b();
+                else Console.WriteLine("Не верный номер части");
+            }
+            Console.WriteLine("");
             Console.WriteLine("");
         }
+        static void RecA(int a, int b)
+        {
+            Console.WriteLine(" " + a);
+            if (a < b ) RecA(a + 1, b);
+            
+        }
+        static int RecB(int a, int b)
+        {
+            if (a == b) return a;
+            else return RecB(a, b - 1) + b;
+        }
+        static void Task_7a()
+        {
+            Console.WriteLine("Укажите число a:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Укажите число b:");
+            int b = int.Parse(Console.ReadLine());
+            RecA(a, b);
+            Console.ReadKey();
 
+        }
+        static void Task_7b()
+        {
+            Console.WriteLine("Укажите число a:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Укажите число b:");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine(RecB(a, b));
+            Console.ReadKey();
+        }
 
+        // Итоговый вывод
         static void Main()
         {
             Console.SetWindowSize(150, 50);
